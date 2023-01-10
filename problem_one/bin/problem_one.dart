@@ -2,7 +2,7 @@ import 'package:problem_one/problem_one.dart' as problem_one;
 
 void main(List<String> arguments) {
   // print('Hello world: ${problem_one.calculate()}!');
-  print(_twoSum([3, 3], 6));
+  print(_twoSum([2, 3, 6, 7, 8, 7, 10], 12));
 }
 
 List<int> _twoSum(List<int> num, int target) {
