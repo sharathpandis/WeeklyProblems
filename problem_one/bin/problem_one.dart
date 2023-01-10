@@ -1,13 +1,11 @@
 import 'package:problem_one/problem_one.dart' as problem_one;
 
 void main(List<String> arguments) {
-  print('Hello world: ${problem_one.calculate()}!');
-  print(_twoSum([2, 3, 6, 7, 8, 7, 10], 12));
+  // print('Hello world: ${problem_one.calculate()}!');
+  print(_twoSum([6, 4, 6], 12));
 }
 
 List<int> _twoSum(List<int> num, int target) {
-  // num = [2, 7, 11, 15];
-  // target = 9;
   List<int> _result = [];
   for (var i = 0; i < num.length; i++) {
     int element1 = num[i];
