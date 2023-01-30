@@ -6,12 +6,12 @@ void main(List<String> arguments) {
 }
 
 String _checkIp4Address(String ip4Address) {
-  List address = ip4Address.split(".");
-  String result = "";
   if (ip4Address.contains(RegExp(r'[A-Z]')) ||
       ip4Address.contains(RegExp(r'[a-z]'))) {
     return "Invalid";
   }
+  List address = ip4Address.split(".");
+  String result = "";
   for (var i = 0; i < address.length; i++) {
     int element = int.parse(address[i]);
     if (element > 255) {
